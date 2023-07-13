@@ -40,5 +40,5 @@ python app.py
 | post symptom | POST | `/predict` | { "gejala1": "", "gejala2": "", "gejala3": ""} |
 
 ## Authors
-    - ArieAr
-    - ChatGPT
+  - ArieAr
+  - ChatGPT
