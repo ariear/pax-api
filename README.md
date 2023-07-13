@@ -13,7 +13,7 @@ Hello there 👋, Today I built a rest api that functions to check whether a use
  - scikit-learn 💻
  - pandas 🗃
 
-## Instalation
+## Installation
 
 Clone this repo
 
