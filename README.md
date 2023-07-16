@@ -1,6 +1,6 @@
 # Pax (Rest Api For Check Anxiety Disorder) 🏥
 
-Hello there 👋, Today I built a rest api that functions to check whether a user has Anxiety disorder or not, dont forget to star this repo ⭐
+Hello there 👋, Today I built a rest api that functions to check whether a user has Anxiety disorder or not, I built this using random forest algorithm, dont forget to star this repo ⭐
 
 - [Pax](#Pax)
   - [Tech Stack](#techstack)
@@ -13,7 +13,7 @@ Hello there 👋, Today I built a rest api that functions to check whether a use
  - scikit-learn 💻
  - pandas 🗃
 
-## Instalation
+## Installation
 
 Clone this repo
 
@@ -41,5 +41,5 @@ python app.py
 | get symptom | GET | `/symptom` | - |
 
 ## Authors
-    - ArieAr
-    - ChatGPT
+  - ArieAr
+  - ChatGPT
