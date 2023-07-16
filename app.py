@@ -1,5 +1,6 @@
 import pickle
 import pandas as pd
+import csv
 from sklearn.feature_extraction.text import CountVectorizer
 from flask import Flask, request, jsonify
 
@@ -15,6 +16,22 @@ with open('storage/vectorizer.pkl', 'rb') as file:
 
 # Membaca data dari file CSV
 dataframe = pd.read_csv('storage/data_diagnose.csv')
+
+# Fungsi untuk membaca data gejala dari file CSV
+def load_data_from_csv(csv_file):
+    data = []
+    with open(csv_file, 'r') as file:
+        reader = csv.DictReader(file)
+        for idx, row in enumerate(reader, start=1):
+            data.append({'id': idx, 'gejala': row['gejala']})
+    return data
+
+@app.route('/symptom', methods=['GET'])
+def get_gejala():
+    csv_file = 'storage/gejala.csv'
+    gejala_data = load_data_from_csv(csv_file)
+    response = jsonify({'gejala': gejala_data})
+    return response
 
 @app.route('/predict', methods=['POST'])
 def predict():

@@ -38,6 +38,7 @@ python app.py
 | Endpoint | Method | Usage | Body |
 |----------|-------|-------|-------|
 | post symptom | POST | `/predict` | { "gejala1": "", "gejala2": "", "gejala3": ""} |
+| get symptom | GET | `/symptom` | - |
 
 ## Authors
     - ArieAr
